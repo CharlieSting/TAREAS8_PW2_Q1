@@ -15,7 +15,7 @@ export class JsonplaceholderService {
     return this.http.get<IPhotos>(`${this.apiUrl}/photos`);
   }
 
-  getPosts(){
+  getPosts(): Observable<IPosts>{
     return this.http.get<IPosts>(`${this.apiUrl}/posts`);
   }
 }
